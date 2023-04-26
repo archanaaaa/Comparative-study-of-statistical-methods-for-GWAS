@@ -10,10 +10,13 @@ To investigate the relationship between genetic variants and blood pressure in t
 ### Preprocessing:
 
 a. Removing individuals (rows) with missing data
+
 b. Excluding SNPs with a minor allele frequency less than 5%:
-(SNPs (Single Nucleotide Polymorphisms) are genetic variants that occur when there is a change in a single nucleotide (A, C, T, or G) at a specific position in the DNA sequence. 
+
+SNPs (Single Nucleotide Polymorphisms) are genetic variants that occur when there is a change in a single nucleotide (A, C, T, or G) at a specific position in the DNA sequence. 
 The minor allele frequency (MAF) is the frequency of the least common allele in a population. If a SNP has a minor allele frequency less than 5%, it means that the allele that occurs less frequently is present in less than 5% of the population. 
-In the given code, SNPs with a minor allele frequency less than 5% are excluded from the analysis. This is done because such SNPs are rare in the population, and their effect on the phenotype may not be well understood. Excluding these SNPs can help reduce noise and improve the accuracy of the analysis.)
+In the given code, SNPs with a minor allele frequency less than 5% are excluded from the analysis. This is done because such SNPs are rare in the population, and their effect on the phenotype may not be well understood. Excluding these SNPs can help reduce noise and improve the accuracy of the analysis.
+
 c. Performing imputation to fill in missing genotypes.
 
 ### GWAS using regularization methods:
@@ -118,7 +121,7 @@ Important features:
        'HYPERTEN', 'TIMEAP', 'TIMEMI', 'TIMEMIFC', 'TIMECHD', 'TIMESTRK',
        'TIMECVD', 'TIMEDTH', 'TIMEHYP']
 
-3. Both:
+iii. Both:
 
 Best hyperparameters:  {'alpha': 10, 'max_iter': 1000, 'tol': 0.001}
 Best performance:  0.7860207931189587
