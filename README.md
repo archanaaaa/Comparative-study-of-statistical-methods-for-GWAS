@@ -5,6 +5,10 @@ Implementing GWAS (Genome wide association studies) on FHS (Framingham Heart Stu
 
 To investigate the relationship between genetic variants and blood pressure in the FHS dataset.
 
+## Output: 
+
+To identify important genetic markers (features) and predict disease risk (accuracy of the model).
+
 ## Steps:
 
 ### Preprocessing:
